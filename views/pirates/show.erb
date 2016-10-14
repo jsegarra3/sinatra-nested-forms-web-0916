@@ -1,7 +1,14 @@
-<h1>Display your Pirate here</h1>
-
-
-<h2>Display your first ship here</h2>
-
-
+<h1>Display your Pirate here</h1><BR />
+<%= @piratehash[:name] %><BR />
+<%= @piratehash[:weight] %><BR />
+<%= @piratehash[:height] %><BR />
+<h2>Display your first ship here</h2><BR />
+<% @piratehash[:ships].each do |ship|%>
+  <%= ship[:name] %><BR />
+  <%= ship[:type] %><BR />
+  <%= ship[:booty] %><BR /><BR />
+<% end %>
 <h2>Display your second ship here</h2>
+<P>
+  No I think I'll just use a .each, thanks.
+</P>
